@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise Invitation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Surprise Popup -->
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <h2>🎉 Surprise!</h2>
+    <p>Are you ready?</p>
+    <button onclick="startApp()">Yes, Let's Go ✨</button>
+  </div>
+</div>
+
+<!-- Role Selection -->
+<div id="roleSelect" class="hidden center">
+  <h2>Who are you?</h2>
+  <button onclick="chooseRole('pu')">PU</button>
+  <button onclick="chooseRole('degree')">Degree</button>
+  <button onclick="chooseRole('staff')">Staff</button>
+</div>
+
+<!-- Invitation Section -->
+<div id="invitation" class="hidden">
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <h1 class="invite-text">✨ You Are Invited ✨</h1>
+
+  <div class="photos">
+    <img src="images/photo1.jpg" onclick="openFull(this)">
+    <img src="images/photo2.jpg" onclick="openFull(this)">
+  </div>
+
+  <!-- QR Code -->
+  <div class="qr-section">
+    <h3>📲 Scan to Open</h3>
+    <div id="qrcode"></div>
+  </div>
+
+  <!-- Comments -->
+  <div class="comments">
+    <h3>💬 Leave a Message</h3>
+    <input id="name" placeholder="Your name">
+    <textarea id="comment" placeholder="Your message"></textarea>
+    <button onclick="addComment()">Post</button>
+    <div id="commentList"></div>
+  </div>
+</div>
+
+<!-- Fullscreen Image -->
+<div id="full" onclick="closeFull()">
+  <img id="fullImg">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
