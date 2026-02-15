@@ -28,8 +28,17 @@ function chooseRole(role) {
   gallery.innerHTML = "";
 
   let images = {
-    pu: ["pu1.jpg", "pu2.jpg", "pu3.jpg"],
-    degree: ["degree1.jpg", "degree2.jpg"],
+   pu: [
+"p1.png","p2.png","p3.png","p4.png","p5.png","p6.png","p7.png","p8.png","p9.png","p10.png",
+"p11.png","p12.png","p13.png","p14.png","p15.png","p16.png","p17.png","p18.png","p19.png","p20.png",
+"p21.png","p22.png","p23.png","p24.png","p25.png","p26.png","p27.png","p28.png","p29.png","p30.png",
+"p31.png","p32.png","p33.png"
+],
+   degree: [
+"d1.png","d2.png","d3.png","d4.png","d5.png","d6.png","d7.png","d8.png","d9.png","d10.png",
+"d11.png","d12.png","d13.png","d14.png","d15.png","d16.png","d17.png","d18.png","d19.png","d20.png",
+"d21.png","d22.png","d23.png"
+],
     staff: ["staff1.jpg", "staff2.jpg"]
   };
 
