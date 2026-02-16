@@ -58,10 +58,28 @@ button {
 @keyframes openLeft { to { transform: translateX(-100%); } }
 @keyframes openRight { to { transform: translateX(100%); } }
 
+.photos {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
 .photos img {
-  width: 150px;
-  margin: 10px;
+  height: 150px;
+  width: auto;
+  border-radius: 12px;
   cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
 }
 
 #full {
