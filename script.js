@@ -28,12 +28,18 @@ function chooseRole(role) {
   gallery.innerHTML = "";
 
   let images = {
-   pu: ["p1.png","p2.png","p3.png","p4.png","p5.png","p6.png","p7.png","p8.png","p9.png","p10.png",
-"p11.png","p12.png","p13.png","p14.png","p15.png","p16.png","p17.png","p18.png","p19.png","p20.png",
-"p21.png","p22.png","p23.png","p24.png","p25.png","p26.png","p27.png","p28.png","p29.png","p30.png",
-"p31.png","p32.png","p33.png"], degree: ["d1.png","d2.png","d3.png","d4.png","d5.png","d6.png","d7.png","d8.png","d9.png","d10.png",
-"d11.png","d12.png","d13.png","d14.png","d15.png","d16.png","d17.png","d18.png","d19.png","d20.png",
-"d21.png","d22.png","d23.png"], staff: ["staff1.jpg", "staff2.jpg"]};
+   pu: [
+"p1.png.jpeg","p2.png.jpeg","p3.png.jpeg","p4.png.jpeg","p5.png.jpeg","p6.png.jpeg","p7.png.jpeg","p8.png.jpeg","p9.png.jpeg","p10.png.jpeg",
+"p11.png.jpeg","p12.png.jpeg","p13.png.jpeg","p14.png.jpeg","p15.png.jpeg","p16.png.jpeg","p17.png.jpeg","p18.png.jpeg","p19.png.jpeg","p20.png.jpeg",
+"p21.png.jpeg","p22.png.jpeg","p23.png.jpeg","p24.png.jpeg","p25.png.jpeg","p26.png.jpeg","p27.png.jpeg","p28.png.jpeg","p29.png.jpeg","p30.png.jpeg",
+"p31.png.jpeg","p32.png.jpeg","p33.png.jpeg"
+],
+
+degree: [
+"d1.png.jpeg","d2.png.jpeg","d3.png.jpeg","d4.png.jpeg","d5.png.jpeg","d6.png.jpeg","d7.png.jpeg","d8.png.jpeg","d9.png.jpeg","d10.png.jpeg",
+"d11.png.jpeg","d12.png.jpeg","d13.png.jpeg","d14.png.jpeg","d15.png.jpeg","d16.png.jpeg","d17.png.jpeg","d18.png.jpeg","d19.png.jpeg","d20.png.jpeg",
+"d21.png.jpeg","d22.png.jpeg","d23.png.jpeg"
+], staff: ["staff1.jpg", "staff2.jpg"]};
 
   images[role].forEach(file => {
     let img = document.createElement("img");
