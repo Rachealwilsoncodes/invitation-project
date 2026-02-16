@@ -64,17 +64,3 @@ function openFull(img) {
 function closeFull() {
   document.getElementById("full").style.display = "none";
 }
-
-function addComment() {
-  let name = document.getElementById("name").value;
-  let text = document.getElementById("comment").value;
-
-  if (!name || !text) return;
-
-  let div = document.createElement("div");
-  div.innerHTML = `<b>${name}</b>: ${text}`;
-  document.getElementById("commentList").appendChild(div);
-
-  document.getElementById("name").value = "";
-  document.getElementById("comment").value = "";
-}
