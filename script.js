@@ -1,4 +1,3 @@
-notlet clickSound = new Audio("music/click.mp3");
 
 const messages = {
   degree: `To the Degree Batch —
@@ -29,8 +28,10 @@ function chooseRole(role) {
   document.getElementById("gallerySection").classList.remove("hidden");
 
   const touchBtn = document.getElementById("touchBtn");
-  const typeElement = document.getElementById("typewriter");
+  const typeElement = document.getElementById("galleryMessage");
+if (typeElement) {
   typeElement.textContent = "";
+}
 
   // Show Touch Me only for PU
   if (role === "pu") {
