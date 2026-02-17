@@ -106,7 +106,7 @@ function startTypewriter() {
 function openInvitation() {
   clickSound.play();
 
-  document.getElementById("invitationPage").classList.remove("hidden");
+  document.getElementById("invitation").classList.remove("hidden");
 
   const left = document.querySelector(".left-curtain");
   const right = document.querySelector(".right-curtain");
