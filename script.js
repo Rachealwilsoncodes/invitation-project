@@ -38,7 +38,13 @@ your teachers will miss the noise
 more than the silence.
 
 Once our students,
-forever our echo.`
+forever our echo.`,
+  pinv: ' We warmly invite you to the Annual Day celebration.
+Come, make some more noise,
+create one last beautiful memory,
+and let your echoes fill the campus once again.
+
+We’ll be waiting for you.'
 };
 
 function startApp() {
@@ -59,6 +65,7 @@ if (typeElement) {
 
   // Show Touch Me only for PU
   if (role === "pu") {
+     startTypewriter(messages.pinv,"galleryMessage");
     touchBtn.style.display = "block";
   } else {
     touchBtn.style.display = "none";
