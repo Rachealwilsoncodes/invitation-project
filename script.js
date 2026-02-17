@@ -85,7 +85,7 @@ your teachers will miss the noise
 more than the silence.
 
 Once our students,
-forever our echo. 💫`;
+forever our echo.`;
 
 function startTypewriter() {
   const element = document.getElementById("typewriter");
