@@ -156,3 +156,18 @@ function scrollGallery(direction) {
     behavior: "smooth"
   });
 }
+function startTypewriter(text) {
+  const element = document.getElementById("typewriter");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 35);
+    }
+  }
+
+  type();
+}
+
