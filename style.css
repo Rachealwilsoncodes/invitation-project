@@ -112,3 +112,21 @@ button {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+
+.invite-btn {
+  margin: 30px auto;
+  display: block;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, gold, orange);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.invite-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px gold;
+}
