@@ -82,10 +82,10 @@ if (typeElement) {
 
   // Degree auto message
   if (role === "degree") {
-    startTypewriter(messages.degree, "messages");
+    startTypewriter(messages.degree,"galleryMessage");
   }
     if (role === "staff") {
-    startTypewriter(messages.staff, "messages");
+    startTypewriter(messages.staff,"galleryMessage");
   }
 }
 
