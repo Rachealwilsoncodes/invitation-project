@@ -121,4 +121,8 @@ function openInvitation() {
     startTypewriter();
   }, 2000);
 }
+function goBack() {
+  document.getElementById("gallerySection").classList.add("hidden");
+  document.getElementById("roleSelect").classList.remove("hidden");
+}
 
