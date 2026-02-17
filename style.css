@@ -171,4 +171,7 @@ button {
 .photos::-webkit-scrollbar {
   display: none;
 }
+#touchBtn {
+  display: none;
+}
 
