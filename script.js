@@ -17,7 +17,6 @@ forever our echo.`
 };
 
 function startApp() {
-  clickSound.play();
   document.getElementById("popup").style.display = "none";
   document.getElementById("roleSelect").classList.remove("hidden");
 }
