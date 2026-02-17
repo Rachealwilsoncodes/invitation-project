@@ -1,20 +1,19 @@
 let clickSound = new Audio("music/click.mp3");
 
 const messages = {
-  degree: `To the Degree Batch —
+  degree: 'To the Degree Batch —
 Your journey was calm,
 your strength was silent,
 but your impact was powerful.
 
-Wishing you success beyond these walls.`,
+Wishing you success beyond these walls.',
 
-  pu: `You were never the silent batch —
+  pu: 'You were never the silent batch —
 you filled every corridor with echoes,
 every classroom with life,
 every ordinary day with something unforgettable.
-
 Once our students,
-forever our echo.`
+forever our echo.'
 };
 
 function startApp() {
