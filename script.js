@@ -97,7 +97,7 @@ function startTypewriter() {
     if (index < message.length) {
       element.textContent += message.charAt(index);
       index++;
-      setTimeout(type, 35); // typing speed (lower = faster)
+      setTimeout(type, 55); // typing speed (lower = faster)
     }
   }
 
