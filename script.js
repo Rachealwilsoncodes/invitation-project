@@ -12,7 +12,11 @@ function chooseRole(role) {
 
   clickSound.play();
 
-  document.getElementById("roleSelect").classList.add("hidden");
+  if (role === "pu") {
+    document.getElementById("touchBtn").style.display = "block";
+  } else {
+    document.getElementById("touchBtn").style.display = "none";
+  }
 
   // 🎵 Role Based Music
   let music = {
