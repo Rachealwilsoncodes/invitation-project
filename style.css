@@ -130,3 +130,34 @@ button {
   transform: scale(1.1);
   box-shadow: 0 0 20px gold;
 }
+
+.hidden {
+  display: none;
+}
+
+#invitationPage {
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: red;
+  transition: transform 2s ease;
+  z-index: 5;
+}
+
+.left-curtain {
+  left: 0;
+}
+
+.right-curtain {
+  right: 0;
+}
