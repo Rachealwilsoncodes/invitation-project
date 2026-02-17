@@ -101,3 +101,21 @@ function startTypewriter() {
 
   type();
 }
+function openInvitation() {
+  clickSound.play();
+
+  document.getElementById("invitationPage").classList.remove("hidden");
+
+  const left = document.querySelector(".left-curtain");
+  const right = document.querySelector(".right-curtain");
+
+  setTimeout(() => {
+    left.style.transform = "translateX(-100%)";
+    right.style.transform = "translateX(100%)";
+  }, 300);
+
+  setTimeout(() => {
+    startTypewriter();
+  }, 2000);
+}
+
