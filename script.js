@@ -1,11 +1,30 @@
 
 const messages = {
-  degree: `To the Degree Batch —
-Your journey was calm,
-your strength was silent,
-but your impact was powerful.
+  degree: `You walked in looking grown,
+but somewhere behind those serious faces
+were the same little kids
+who still laughed at the smallest things.
 
-Wishing you success beyond these walls.`,
+You carried responsibilities,
+dreams of careers,
+plans for the future —
+yet your hearts remained soft and innocent.
+
+You are children in elder form —
+mature in age,
+but pure in spirit.
+
+Sometimes strong,
+sometimes confused,
+sometimes pretending to have it all figured out —
+but always learning, always growing.
+
+May the world see your strength,
+but never take away your childlike wonder.
+
+No matter how tall you stand tomorrow,
+to us,
+you will always be our little big kids..`,
 
   puFinal: `You were never the silent batch —
 you filled every corridor with echoes,
