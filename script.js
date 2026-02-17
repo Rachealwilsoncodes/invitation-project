@@ -66,7 +66,7 @@ function closeFull() {
   document.getElementById("full").style.display = "none";
 }
 
-const message = `You were never the silent batch —
+const message = {pu: `You were never the silent batch —
 you filled every corridor with echoes,
 every classroom with life,
 every ordinary day with something unforgettable.
@@ -91,7 +91,16 @@ your teachers will miss the noise
 more than the silence.
 
 Once our students,
-forever our echo.`;
+forever our echo.`, 
+                degree: `To the Degree Batch —
+Your journey was calm,
+your strength was silent,
+but your impact was powerful.
+
+Wishing you success beyond these walls.`,
+
+  staff: ""
+};
 
 function startTypewriter() {
   const element = document.getElementById("typewriter");
