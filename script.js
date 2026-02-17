@@ -1,19 +1,20 @@
 let clickSound = new Audio("music/click.mp3");
 
 const messages = {
-  degree: 'To the Degree Batch -
+  degree: `To the Degree Batch —
 Your journey was calm,
 your strength was silent,
 but your impact was powerful.
 
-Wishing you success beyond these walls.',
+Wishing you success beyond these walls.`,
 
-  pu: 'You were never the silent batch —
+  puFinal: `You were never the silent batch —
 you filled every corridor with echoes,
 every classroom with life,
 every ordinary day with something unforgettable.
+
 Once our students,
-forever our echo.'
+forever our echo.`
 };
 
 function startApp() {
@@ -28,8 +29,8 @@ function chooseRole(role) {
   document.getElementById("gallerySection").classList.remove("hidden");
 
   const touchBtn = document.getElementById("touchBtn");
-  const typeElement = document.getElementById("typewriter");
-  typeElement.textContent = "";
+  const galleryMessage = document.getElementById("galleryMessage");
+  galleryMessage.textContent = "";
 
   // Show Touch Me only for PU
   if (role === "pu") {
@@ -43,14 +44,9 @@ function chooseRole(role) {
   gallery.innerHTML = "";
 
   let images = {
-    pu:["p1.png.jpg","p2.png.JPG","p3.png.JPG","p4.png.jpg","p5.png.jpg","p6.png.jpg","p7.png.jpg","p8.png.jpg","p9.png.jpg","p10.png.jpeg",
-"p11.png.jpeg","p12.png.jpeg","p13.png.jpeg","p14.png.jpeg","p15.png.jpeg","p16.png.jpeg","p17.png.jpeg","p18.png.jpeg","p19.png.jpeg","p20.png.jpeg",
-"p21.png.jpeg","p22.png.jpeg","p23.png.jpeg","p24.png.jpeg","p25.png.jpeg","p26.png.jpeg","p27.png.jpeg","p28.png.jpeg","p29.png.jpeg","p30.png.jpeg",
-"p31.png.jpeg","p32.png.jpeg","p33.png.jpeg"],
-    degree: ["d1.png.JPG","d2.png.JPG","d3.png.JPG","d4.png.JPG","d5.png.jpeg","d6.png.jpeg","d7.png.jpeg","d8.png.jpeg","d9.png.jpeg","d10.png.jpeg",
-"d11.png.jpeg","d12.png.jpeg","d13.png.jpeg","d14.png.jpeg","d15.png.jpeg","d16.png.jpeg","d17.png.jpeg","d18.png.jpeg","d19.png.jpeg","d20.png.jpeg",
-"d21.png.jpeg","d22.png.jpeg","d23.png.jpeg","d24.jpeg","d25.jpeg","d23.jpeg"],
-staff: ["staff1.jpg","staff2.jpg"]
+    pu: ["p1.png.jpg","p2.png.JPG"],
+    degree: ["d1.png.JPG","d2.png.JPG"],
+    staff: ["staff1.jpg","staff2.jpg"]
   };
 
   images[role].forEach(file => {
@@ -62,7 +58,7 @@ staff: ["staff1.jpg","staff2.jpg"]
 
   // Degree auto message
   if (role === "degree") {
-    startTypewriter(messages.degree, "typewriter");
+    startTypewriter(messages.degree, "galleryMessage");
   }
 }
 
@@ -78,10 +74,12 @@ function startTypewriter(text, elementId) {
       setTimeout(type, 35);
     }
   }
+
   type();
 }
 
 function openInvitation() {
+
   document.getElementById("gallerySection").classList.add("hidden");
   document.getElementById("invitationPage").classList.remove("hidden");
 
