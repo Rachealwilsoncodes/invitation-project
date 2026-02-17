@@ -48,12 +48,7 @@ degree: [
     gallery.appendChild(img);
   });
 
-  // 📲 QR Code
-  new QRCode(document.getElementById("qrcode"), {
-    text: window.location.href,
-    width: 160,
-    height: 160
-  });
+  startTypewriter();
 }
 
 function openFull(img) {
