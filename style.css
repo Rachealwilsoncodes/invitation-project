@@ -105,4 +105,10 @@ button {
   line-height: 1.8;
   margin: 30px auto;
   max-width: 800px;
+  border-right: 2px solid gold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
