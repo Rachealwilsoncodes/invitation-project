@@ -44,8 +44,15 @@ function chooseRole(role) {
   gallery.innerHTML = "";
 
   let images = {
-    pu: ["p1.jpg","p2.jpg"],
-    degree: ["d1.jpg","d2.jpg"],
+    pu: ["p1.png.jpg","p2.png.JPG","p3.png.JPG","p4.png.jpg","p5.png.jpg","p6.png.jpg","p7.png.jpg","p8.png.jpg","p9.png.jpg","p10.png.jpeg",
+"p11.png.jpeg","p12.png.jpeg","p13.png.jpeg","p14.png.jpeg","p15.png.jpeg","p16.png.jpeg","p17.png.jpeg","p18.png.jpeg","p19.png.jpeg","p20.png.jpeg",
+"p21.png.jpeg","p22.png.jpeg","p23.png.jpeg","p24.png.jpeg","p25.png.jpeg","p26.png.jpeg","p27.png.jpeg","p28.png.jpeg","p29.png.jpeg","p30.png.jpeg",
+"p31.png.jpeg","p32.png.jpeg","p33.png.jpeg"
+],
+    degree: ["d1.png.JPG","d2.png.JPG","d3.png.JPG","d4.png.JPG","d5.png.jpeg","d6.png.jpeg","d7.png.jpeg","d8.png.jpeg","d9.png.jpeg","d10.png.jpeg",
+"d11.png.jpeg","d12.png.jpeg","d13.png.jpeg","d14.png.jpeg","d15.png.jpeg","d16.png.jpeg","d17.png.jpeg","d18.png.jpeg","d19.png.jpeg","d20.png.jpeg",
+"d21.png.jpeg","d22.png.jpeg","d23.png.jpeg","d24.jpeg","d25.jpeg","d23.jpeg"
+],
     staff: ["staff1.jpg","staff2.jpg"]
   };
 
