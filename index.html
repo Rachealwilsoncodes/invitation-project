@@ -7,28 +7,13 @@
 </head>
 <body>
 
-<!-- Surprise Popup -->
+<!-- Popup -->
 <div id="popup" class="popup">
   <div class="popup-box">
     <h2>Surprise!</h2>
     <p>Are you ready?</p>
     <button onclick="startApp()">Yes, Let's Go ✨</button>
   </div>
-</div>
-<div id="gallerySection" class="hidden">
-
-  <div class="gallery-wrapper">
-    <div class="photos" id="gallery"></div>
-    <button class="back-btn" onclick="goBack()">Home</button>
-  </div>
-
-  <button id="touchBtn" class="invite-btn" onclick="openInvitation()">
-  Touch Me ✨
-</button>
-
-<div class="farewell-message" id="typewriter"></div>
-
-
 </div>
 
 <!-- Role Selection -->
@@ -38,14 +23,32 @@
   <button onclick="chooseRole('degree')">Degree</button>
   <button onclick="chooseRole('staff')">Staff</button>
 </div>
-  <div id="invitationPage" class="hidden">
+
+<!-- Gallery Section -->
+<div id="gallerySection" class="hidden">
+
+  <div class="gallery-wrapper">
+    <div class="photos" id="gallery"></div>
+    <button class="back-btn" onclick="goBack()">Home</button>
+  </div>
+
+  <button id="touchBtn" class="invite-btn" onclick="openInvitation()">
+    Touch Me ✨
+  </button>
+
+  <div class="farewell-message" id="galleryMessage"></div>
+
+</div>
+
+<!-- Invitation Page -->
+<div id="invitationPage" class="hidden">
 
   <div class="curtain left-curtain"></div>
   <div class="curtain right-curtain"></div>
 
   <h1 class="invite-text">✨ The Storm with Smiles ✨</h1>
 
-  <div class="farewell-message" id="typewriter"></div>
+  <div class="farewell-message" id="finalMessage"></div>
 
 </div>
 
@@ -53,6 +56,7 @@
 <div id="full" onclick="closeFull()">
   <img id="fullImg">
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
