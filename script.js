@@ -106,7 +106,8 @@ function startTypewriter() {
 function openInvitation() {
   clickSound.play();
 
-   document.getElementById("invitationPage").classList.remove("hidden");
+  document.getElementById("gallerySection").classList.add("hidden");
+  document.getElementById("invitationPage").classList.remove("hidden");
 
   const left = document.querySelector(".left-curtain");
   const right = document.querySelector(".right-curtain");
@@ -118,8 +119,9 @@ function openInvitation() {
 
   setTimeout(() => {
     startTypewriter();
-  }, 2000);
+  }, 3000);
 }
+
 function goBack() {
   document.getElementById("gallerySection").classList.add("hidden");
   document.getElementById("roleSelect").classList.remove("hidden");
