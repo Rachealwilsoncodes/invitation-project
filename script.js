@@ -11,11 +11,18 @@ function chooseRole(role) {
   document.getElementById("gallerySection").classList.remove("hidden");
 
   clickSound.play();
-
+  const touchBtn = document.getElementById("touchBtn");
+  const typeElement = document.getElementById("typewriter");
+   typeElement.textContent = "";
   if (role === "pu") {
-    document.getElementById("touchBtn").style.display = "block";
+    touchBtn.style.display = "block";
   } else {
-    document.getElementById("touchBtn").style.display = "none";
+    touchBtn.style.display = "none";
+  }
+
+  // 🔥 Auto type only for degree
+  if (role === "degree") {
+    startTypewriter(messages.degree);
   }
 
   // 🎵 Role Based Music
