@@ -7,6 +7,9 @@ function startApp() {
 }
 
 function chooseRole(role) {
+  document.getElementById("roleSelect").classList.add("hidden");
+  document.getElementById("gallerySection").classList.remove("hidden");
+
   clickSound.play();
 
   document.getElementById("roleSelect").classList.add("hidden");
