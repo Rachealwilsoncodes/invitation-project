@@ -90,6 +90,9 @@ if (typeElement) {
 }
 
 function startTypewriter(text, elementId) {
+
+  if (!text) return;   // 🔥 prevents crash if text is missing
+
   const element = document.getElementById(elementId);
   element.textContent = "";
   let index = 0;
