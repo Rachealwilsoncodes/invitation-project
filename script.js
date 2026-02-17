@@ -64,3 +64,45 @@ function openFull(img) {
 function closeFull() {
   document.getElementById("full").style.display = "none";
 }
+
+const message = `You were never the silent batch —
+you filled every corridor with echoes,
+every classroom with life,
+every ordinary day with something unforgettable.
+
+Yes, you made noise…
+but that very noise
+will now echo inside our hearts forever.
+
+On days when our hearts were heavy,
+you didn’t know it —
+but your laughter lightened us,
+your mischief healed us,
+your presence gave us strength.
+
+You were not just students in a register,
+you were energy, chaos, joy, and warmth.
+
+As you step into the world beyond these gates,
+carry your loud dreams proudly.
+And remember —
+your teachers will miss the noise
+more than the silence.
+
+Once our students,
+forever our echo. 💫`;
+
+function startTypewriter() {
+  const element = document.getElementById("typewriter");
+  let index = 0;
+
+  function type() {
+    if (index < message.length) {
+      element.textContent += message.charAt(index);
+      index++;
+      setTimeout(type, 35); // typing speed (lower = faster)
+    }
+  }
+
+  type();
+}
