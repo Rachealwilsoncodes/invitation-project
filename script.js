@@ -1,7 +1,7 @@
 let clickSound = new Audio("music/click.mp3");
 
 const messages = {
-  degree: 'To the Degree Batch —
+  degree: 'To the Degree Batch -
 Your journey was calm,
 your strength was silent,
 but your impact was powerful.
