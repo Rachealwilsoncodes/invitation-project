@@ -126,3 +126,12 @@ function goBack() {
   document.getElementById("roleSelect").classList.remove("hidden");
 }
 
+function scrollGallery(direction) {
+  const gallery = document.getElementById("gallery");
+  const scrollAmount = 300; // adjust scroll distance
+
+  gallery.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
