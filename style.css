@@ -161,3 +161,14 @@ button {
 .right-curtain {
   right: 0;
 }
+.photos {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+}
+
+.photos::-webkit-scrollbar {
+  display: none;
+}
+
