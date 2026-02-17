@@ -1,30 +1,17 @@
 
 const messages = {
-  degree: `You walked in looking grown,
-but somewhere behind those serious faces
-were the same little kids
-who still laughed at the smallest things.
+  degree: `To our Degree Batch —
 
-You carried responsibilities,
-dreams of careers,
-plans for the future —
-yet your hearts remained soft and innocent.
+You may look grown and ready for the world,
+but to us, you are still little kids in elder form —
+serious outside, soft and innocent at heart.
 
-You are children in elder form —
-mature in age,
-but pure in spirit.
+We warmly invite you to join us for the Annual Day celebration.
+Come, relive your laughter,
+create one more memory,
+and make the day special with your presence.
 
-Sometimes strong,
-sometimes confused,
-sometimes pretending to have it all figured out —
-but always learning, always growing.
-
-May the world see your strength,
-but never take away your childlike wonder.
-
-No matter how tall you stand tomorrow,
-to us,
-you will always be our little big kids..`,
+We’ll be waiting.`,
 
   puFinal: `You were never the silent batch —
 you filled every corridor with echoes,
