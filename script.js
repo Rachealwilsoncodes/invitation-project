@@ -51,7 +51,7 @@ function chooseRole(role) {
 degree: [
 "d1.png.JPG","d2.png.JPG","d3.png.JPG","d4.png.JPG","d5.png.jpeg","d6.png.jpeg","d7.png.jpeg","d8.png.jpeg","d9.png.jpeg","d10.png.jpeg",
 "d11.png.jpeg","d12.png.jpeg","d13.png.jpeg","d14.png.jpeg","d15.png.jpeg","d16.png.jpeg","d17.png.jpeg","d18.png.jpeg","d19.png.jpeg","d20.png.jpeg",
-"d21.png.jpeg","d22.png.jpeg","d23.png.jpeg"
+"d21.png.jpeg","d22.png.jpeg","d23.png.jpeg","d24.jpeg","d25.jpeg","d23.jpeg"
 ], staff: ["staff1.jpg", "staff2.jpg"]};
 
   images[role].forEach(file => {
