@@ -8,7 +8,7 @@ but your impact was powerful.
 
 Wishing you success beyond these walls.`,
 
-  puFinal: `You were never the silent batch —
+  pu: `You were never the silent batch —
 you filled every corridor with echoes,
 every classroom with life,
 every ordinary day with something unforgettable.
