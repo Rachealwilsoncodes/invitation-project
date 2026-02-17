@@ -29,8 +29,8 @@ function chooseRole(role) {
   document.getElementById("gallerySection").classList.remove("hidden");
 
   const touchBtn = document.getElementById("touchBtn");
-  const galleryMessage = document.getElementById("galleryMessage");
-  galleryMessage.textContent = "";
+  const typeElement = document.getElementById("typewriter");
+  typeElement.textContent = "";
 
   // Show Touch Me only for PU
   if (role === "pu") {
@@ -44,8 +44,8 @@ function chooseRole(role) {
   gallery.innerHTML = "";
 
   let images = {
-    pu: ["p1.png.jpg","p2.png.JPG"],
-    degree: ["d1.png.JPG","d2.png.JPG"],
+    pu: ["p1.jpg","p2.jpg"],
+    degree: ["d1.jpg","d2.jpg"],
     staff: ["staff1.jpg","staff2.jpg"]
   };
 
@@ -58,7 +58,7 @@ function chooseRole(role) {
 
   // Degree auto message
   if (role === "degree") {
-    startTypewriter(messages.degree, "galleryMessage");
+    startTypewriter(messages.degree, "typewriter");
   }
 }
 
@@ -74,12 +74,10 @@ function startTypewriter(text, elementId) {
       setTimeout(type, 35);
     }
   }
-
   type();
 }
 
 function openInvitation() {
-
   document.getElementById("gallerySection").classList.add("hidden");
   document.getElementById("invitationPage").classList.remove("hidden");
 
