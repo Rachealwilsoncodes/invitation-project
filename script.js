@@ -13,7 +13,6 @@ function chooseRole(role) {
   clickSound.play();
 
   document.getElementById("roleSelect").classList.add("hidden");
-  document.getElementById("invitation").classList.remove("hidden");
 
   // 🎵 Role Based Music
   let music = {
