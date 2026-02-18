@@ -48,6 +48,7 @@ We’ll be waiting for you.'
 };
 
 function startApp() {
+  document.getElementById("popup").classList.add("hidden");
   document.getElementById("roleSelect").classList.remove("hidden");
 }
 
