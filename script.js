@@ -48,8 +48,8 @@ We’ll be waiting for you.'
 };
 
 function startApp() {
-  alert("clicked");
-  document.getElementById("popup").classList.add("hidden");
+ 
+  document.getElementById("popup").style.display = "none";
   document.getElementById("roleSelect").classList.remove("hidden");
 }
 
