@@ -154,8 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   startBtn.addEventListener("click", function () {
 
-    startBtn.disabled = true;   // prevents double click
-
     document.getElementById("popup").classList.add("hidden");
     document.getElementById("roleSelect").classList.remove("hidden");
 
