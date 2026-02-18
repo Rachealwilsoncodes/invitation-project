@@ -86,19 +86,19 @@ if (typeElement) {
 "d11.png.jpeg","d12.png.jpeg","d13.png.jpeg","d14.png.jpeg","d15.png.jpeg","d16.png.jpeg","d17.png.jpeg","d18.png.jpeg","d19.png.jpeg","d20.png.jpeg",
 "d21.png.jpeg","d22.png.jpeg","d23.png.jpeg","d24.jpeg","d25.jpeg","d23.jpeg","d24.jpeg","d25.jpeg","d26.jpeg"]};
 
+ if (images[role]) {
   images[role].forEach(file => {
     let img = document.createElement("img");
     img.src = "images/" + file;
     img.onclick = () => openFull(img);
     gallery.appendChild(img);
   });
+}
+
 
   // Degree auto message
   if (role === "degree") {
     startTypewriter(messages.degree,"galleryMessage");
-  }
-    if (role === "staff") {
-    startTypewriter(messages.staff,"galleryMessage");
   }
 }
 
