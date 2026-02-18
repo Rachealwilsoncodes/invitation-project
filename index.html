@@ -10,32 +10,31 @@
 <!-- Popup -->
 <div id="popup" class="popup">
   <div class="popup-box">
-    <h2>Surprise!</h2>
+    <h2>🎉 Surprise!</h2>
     <p>Are you ready?</p>
-  <button onclick="startApp()">Yes, Let's Go ✨</button>
+    <button id="startBtn">Yes, Let's Go ✨</button>
   </div>
 </div>
 
 <!-- Role Selection -->
 <div id="roleSelect" class="hidden center">
   <h2>Where do you belong?</h2>
-  <button onclick="chooseRole('pu')">PU</button>
-  <button onclick="chooseRole('degree')">Degree</button>
+  <button data-role="pu">PU</button>
+  <button data-role="degree">Degree</button>
 </div>
 
 <!-- Gallery Section -->
 <div id="gallerySection" class="hidden">
 
-  <div class="gallery-wrapper">
-    <div class="photos" id="gallery"></div>
-    <button class="back-btn" onclick="goBack()">Home</button>
-  </div>
+  <div class="photos" id="gallery"></div>
 
-  <button id="touchBtn" class="invite-btn" onclick="openInvitation()">
+  <button id="touchBtn" class="invite-btn hidden">
     Touch Me ✨
   </button>
 
   <div class="farewell-message" id="galleryMessage"></div>
+
+  <button id="homeBtn">Home</button>
 
 </div>
 
@@ -45,16 +44,17 @@
   <div class="curtain left-curtain"></div>
   <div class="curtain right-curtain"></div>
 
-  <h1 class="invite-text">✨ The Storm with Smiles ✨</h1>
+  <h1>✨ The Storm with Smiles ✨</h1>
 
   <div class="farewell-message" id="finalMessage"></div>
 
 </div>
+
 <!-- Fullscreen Image -->
-<div id="full" onclick="closeFull()">
+<div id="full" class="hidden">
   <img id="fullImg">
 </div>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
