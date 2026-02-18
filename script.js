@@ -47,7 +47,7 @@ and let your echoes fill the campus once again.
 We’ll be waiting for you.'
 };
 
-function startapp() {
+function startApp() {
   document.getElementById("popup").classList.add("hidden");
   document.getElementById("roleSelect").classList.remove("hidden");
 }
