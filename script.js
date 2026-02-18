@@ -150,15 +150,3 @@ function openFull(img) {
 function closeFull() {
   document.getElementById("full").style.display = "none";
 }
-document.addEventListener("DOMContentLoaded", function () {
-
-  const startBtn = document.getElementById("startBtn");
-
-  startBtn.addEventListener("click", function () {
-
-    document.getElementById("popup").classList.add("hidden");
-    document.getElementById("roleSelect").classList.remove("hidden");
-
-  });
-
-});
