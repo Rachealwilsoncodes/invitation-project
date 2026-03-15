@@ -5,7 +5,11 @@ body {
   color: white;
   text-align: center;
 }
-
+.title{
+margin-top:40px;
+font-size:32px;
+color:gold;
+}
 /* ---------- Buttons ---------- */
 button {
   padding: 12px 20px;
