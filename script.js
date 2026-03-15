@@ -29,6 +29,7 @@ and let your echoes fill the campus once again.
 
 We’ll be waiting for you.`;
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
 const gallery = document.getElementById("gallery");
@@ -37,7 +38,9 @@ const message = document.getElementById("message");
 images.forEach(file=>{
 const img=document.createElement("img");
 img.src="images/"+file;
+
 img.onclick=()=>openFull(img);
+
 gallery.appendChild(img);
 });
 
@@ -45,8 +48,11 @@ typeWriter(text,message);
 
 });
 
+
 function typeWriter(text,element){
+
 let i=0;
+
 function typing(){
 if(i<text.length){
 element.textContent+=text.charAt(i);
@@ -54,10 +60,14 @@ i++;
 setTimeout(typing,30);
 }
 }
+
 typing();
+
 }
 
+
 function openFull(img){
+
 const full=document.getElementById("full");
 const fullImg=document.getElementById("fullImg");
 
@@ -65,4 +75,5 @@ fullImg.src=img.src;
 full.classList.remove("hidden");
 
 full.onclick=()=>full.classList.add("hidden");
+
 }
