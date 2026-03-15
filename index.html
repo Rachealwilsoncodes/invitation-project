@@ -1,60 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Surprise Invitation</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>PU Invitation</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Popup -->
-<div id="popup" class="popup">
-  <div class="popup-box">
-    <h2>🎉 Surprise!</h2>
-    <p>Are you ready?</p>
-    <button id="startBtn">Yes, Let's Go ✨</button>
-  </div>
-</div>
+<h1 class="title">✨ The Storm With Smiles ✨</h1>
 
-<!-- Role Selection -->
-<div id="roleSelect" class="hidden center">
-  <h2>Where do you belong?</h2>
-  <button data-role="pu">PU</button>
-  <button data-role="degree">Degree</button>
-</div>
+<!-- Gallery -->
+<div class="photos" id="gallery"></div>
 
-<!-- Gallery Section -->
-<div id="gallerySection" class="hidden">
-
-  <div class="photos" id="gallery"></div>
-
-  <button id="touchBtn" class="invite-btn hidden">
-    Touch Me ✨
-  </button>
-
-  <div class="farewell-message" id="galleryMessage"></div>
-
-  <button id="homeBtn">Home</button>
-
-</div>
-
-<!-- Invitation Page -->
-<div id="invitationPage" class="hidden">
-
-  <div class="curtain left-curtain"></div>
-  <div class="curtain right-curtain"></div>
-
-  <h1>✨ The Storm with Smiles ✨</h1>
-
-  <div class="farewell-message" id="finalMessage"></div>
-
-</div>
+<!-- Message -->
+<div class="farewell-message" id="message"></div>
 
 <!-- Fullscreen Image -->
 <div id="full" class="hidden">
-  <img id="fullImg">
+<img id="fullImg">
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
