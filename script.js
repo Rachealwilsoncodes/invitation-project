@@ -22,12 +22,10 @@ your laughter lightened us.
 Once our students,
 forever our echo.
 
-We warmly invite you to the Annual Day celebration.
-Come, make some more noise,
-create one last beautiful memory,
-and let your echoes fill the campus once again.
-
-We’ll be waiting for you.`;
+Go! Conquer the world.
+Choose the desires of your heart.
+For, Risking is better than regretting.
+`;
 
 
 document.addEventListener("DOMContentLoaded", () => {
